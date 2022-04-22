@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import Logincomponent from './components/Logincomponent/login'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+    let [islogged,updateLoginStatus]=useState(false);
+    let content;
+    let loginStatusUpdateEvent = (e,status) => {
+        updateLoginStatus(status)
+    }
+
+    if(!islogged){
+        content=<Logincomponent loginStatusHandler={loginStatusUpdateEvent}/>
+    }
+    else{
+        content=<p>Logged In</p>
+    }
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {content}
     </div>
   );
 }
