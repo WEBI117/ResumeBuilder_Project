@@ -1,0 +1,24 @@
+.parentcontainer{
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    background: red
+}
+.selectioncontainer{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background: blue
+}
+.buildercontainer{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background: blue
+}
+.layoutcontainer{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background: blue
+}
