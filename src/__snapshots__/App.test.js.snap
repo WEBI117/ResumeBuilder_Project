@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application login tab renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="login"
+    title="logincomponent"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="col-md-2 offset-md-5"
+      >
+        <div
+          className="row"
+          title="emailinput"
+        >
+          <div
+            className="col-md-2"
+          >
+            <div
+              className="row"
+            >
+              <div>
+                <label
+                  className="label"
+                  htmlFor="email"
+                >
+                  Email: 
+                </label>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div>
+                <input
+                  className="input"
+                  data-testid="email"
+                  id="email-input"
+                  onChange={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="row"
+          title="passwordinput"
+        >
+          <div
+            className="col-md-2"
+          >
+            <div
+              className="row"
+            >
+              <div>
+                <label
+                  className="label"
+                  htmlFor="pass"
+                >
+                  Password: 
+                </label>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div>
+                <input
+                  className="input"
+                  data-testid="pass"
+                  id="password-input"
+                  onChange={[Function]}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="row"
+          style={
+            Object {
+              "height": "20px",
+            }
+          }
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-1"
+          >
+            <button
+              disabled={true}
+              id="loginbutton"
+              onClick={[Function]}
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
