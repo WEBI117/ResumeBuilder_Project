@@ -11,7 +11,6 @@ let Resumebuilder = () => {
             <Row>
                 <Col lg={2} md={2}>
                     <div className='selectioncontainer'>
-                        <Layoutsection/>
                     </div>
                 </Col>
                 <Col lg={8} md={8}>
@@ -20,6 +19,7 @@ let Resumebuilder = () => {
                 </Col>
                 <Col lg={2} md={2}>
                     <div className='layoutcontainer'>
+                        <Layoutsection/>
                     </div>
                 </Col>
             </Row>
