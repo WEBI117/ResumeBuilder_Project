@@ -1,16 +1,16 @@
+.selectsection-container{
+}
+
 .section{
     border: solid green;
-    border-width: 5px;
+    border-width: 1px;
     padding: 10px;
-    background: purple
 }
 
 .inactive-sections-container{
     min-height: 50vh;
-    background: black
 }
 
 .active-sections-container{
     min-height: 50vh;
-    background: yellow
 }

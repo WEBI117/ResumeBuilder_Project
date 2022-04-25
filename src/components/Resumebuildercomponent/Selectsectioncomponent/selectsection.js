@@ -80,7 +80,7 @@ let SelectSection = ({sectionList,selectedSectionChangeHandler,activeLayoutChang
     })
 
     return(
-        <div data-testid='selectsectioncontainer'>
+        <div className='selectsection-container' data-testid='selectsectioncontainer'>
             <Row>
                 <p>Inactive sections</p>
                 <div className='active-sections-container' data-testid='inactivesections' 

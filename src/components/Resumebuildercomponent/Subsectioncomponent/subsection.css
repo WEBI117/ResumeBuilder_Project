@@ -1,0 +1,7 @@
+.subsection-container{
+    border-bottom: solid;
+    border-style: bottom;
+    border-color:black;
+    border-width: 1px;
+    padding: 5px;
+}
