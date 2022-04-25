@@ -9,9 +9,9 @@ import "./resumebuilder.css"
 
 let Resumebuilder = (props) => {
     const sections = ['Experience', "Education", "Hobbys"]
-    let [selectedSection,setSelectedSection] = useState()
-    let [sectionDataObject,setSectionDataObject] = useState({})
-    let [subsectionList,setSubsectionList] = useState([])
+    var [selectedSection,setSelectedSection] = useState()
+    var [sectionDataObject,setSectionDataObject] = useState({})
+    var [subsectionList,setSubsectionList] = useState([])
 
 
     // An effect hook that initilaizes the sectionObject array....May be used to populate it with data from the backend
@@ -31,6 +31,7 @@ let Resumebuilder = (props) => {
     useEffect(() => {
         setSubsectionList(sectionDataObject[selectedSection])
     }, [selectedSection])
+
     // Fucntion that updates the current selected section as selected in the SelectSection child component.
     let sectionChangeHandler = (newsection) => {
         setSelectedSection(newsection)
@@ -57,11 +58,9 @@ let Resumebuilder = (props) => {
     // Handler to remove a subsection from the current list
     let removePartial = (selectedsection,sslist,sslistupdater,dataobject,dataobjectupdater) => {
         return (index) => {
-            debugger
-            let newSubsecList=[...sslist]
-            newSubsecList.splice(index,1)
-            sslistupdater(sslist)
             let newsectionDataObject={...dataobject}
+            let newSubsecList = dataobject[selectedsection]
+            newSubsecList.splice(index,1)
             newsectionDataObject[selectedsection]=newSubsecList
             dataobjectupdater(newsectionDataObject)
         }
